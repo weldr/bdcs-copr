@@ -122,8 +122,9 @@ rebuild() {
 fixspec() {
     local pkgname="$1"
 
-    if [[ "$pkgname" = "ghc-haskell-gi" ]]; then
-        sed -i '/mv %{buildroot}%{_ghcdocdir}\/{,ghc-}%{name}/d' ghc-haskell-gi.spec
+    if [[ "$pkgname" = "ghc-haskell-gi" || "$pkgname" = "ghc-hspec-discover" ]]; then
+        # I'm not real clear on what this line intends to do, but it's wrong
+        sed -i '/mv %{buildroot}%{_ghcdocdir}\/{,ghc-}%{name}/d' "${pkgname}.spec"
     elif [[ "$pkgname" =~ ^ghc-gi- ]]; then
         # cabal-rpm doesn't think there's a base package, since there's no exposed-modules,
         # so we need to add the %files section and a Requires from -devel
@@ -169,9 +170,9 @@ config_opts['plugin_conf']['bind_mount_opts']['dirs'].append(('$REPODIR', '$REPO
 cabal update
 
 # Build some newer versions of dependencies
-rebuild memory
-rebuild gitrev
-rebuild cryptonite
+#rebuild memory
+#rebuild gitrev
+#rebuild cryptonite
 
 # Download bdcs and build its deps
 ( cd build &&
@@ -180,3 +181,7 @@ rebuild cryptonite
   cd bdcs/importer &&
   builddeps db 
 )
+
+# Don't know how to tell cabal-rpm to include test dependencies, so just
+# add one more by hand
+rebuild hspec
