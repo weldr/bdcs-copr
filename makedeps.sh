@@ -95,6 +95,9 @@ builddeps() {
 
     # two exits so that a failure from the while loop subshell actually gets caught
     echo "${deplist}" | grep -v 'in Hackage$' | grep -v '\.pc$' | grep -Fv 'libpthread.so' | while read -r dep ; do
+        if [ -z "$dep" ]; then
+            continue
+        fi
         available "$(rpmname "${dep}")" || rebuild "${dep}" || exit 1
     done || exit 1
 }
