@@ -104,11 +104,6 @@ rebuild() {
     local cabalname="$1"
     local pkgname="$(rpmname "${cabalname}")"
 
-    # if it's already built, skip it
-    if [ -f "${REPODIR}/${pkgname}-"*.rpm ]; then
-        return 0
-    fi
-
     builddeps "$cabalname"
 
     # Spit out a spec file and build it
@@ -170,9 +165,17 @@ config_opts['plugin_conf']['bind_mount_opts']['dirs'].append(('$REPODIR', '$REPO
 cabal update
 
 # Build some newer versions of dependencies
-#rebuild memory
-#rebuild gitrev
-#rebuild cryptonite
+if ! available "ghc-memory >= 0.14.6" ; then
+    rebuild memory
+fi
+
+if ! available "ghc-gitrev >= 1.3.1" ; then
+    rebuild gitrev
+fi
+
+if ! available "ghc-cryptonite >= 0.24" ; then
+    rebuild cryptonite
+fi
 
 # Download bdcs and build its deps
 ( cd build &&
@@ -184,4 +187,6 @@ cabal update
 
 # Don't know how to tell cabal-rpm to include test dependencies, so just
 # add one more by hand
-rebuild hspec
+if ! available "ghc-hspec"; then
+    rebuild hspec
+fi
