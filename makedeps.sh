@@ -105,6 +105,7 @@ builddeps() {
 # Build a package and its dependencies
 rebuild() {
     local cabalname="$1"
+    local suffix="$2"
     local pkgname="$(rpmname "${cabalname}")"
 
     builddeps "$cabalname"
@@ -113,7 +114,8 @@ rebuild() {
     ( cd "$BASEDIR" &&
       cabal-rpm spec "${cabalname}" &&
       fixspec "${pkgname}" &&
-      buildpkg "${pkgname}" ) || exit 1
+      addsuffix "${pkgname}" "${suffix}" &&
+      buildpkg "${pkgname}${suffix}" ) || exit 1
 }
 
 # Fix problems in the generated spec files
@@ -148,6 +150,32 @@ BuildRequires: sqlite-devel' "${pkgname}.spec"
     fi
 }
 
+# If a suffix is requested, append it to the package name
+addsuffix() {
+    local pkgname="$1"
+    local suffix="$2"
+
+    if [ -z "$suffix" ]; then
+        return 0
+    fi
+
+    mv "${pkgname}.spec" "${pkgname}${suffix}.spec"
+
+    # Add the suffix to the name, and fix the .files names
+    # We need to care about the position of the new Provides lines in that
+    # you can't use %{version} and %{release} before they are defined.
+    # Assume that Source0 is late enough
+    sed -i -e 's/^Name:.*/&'"${suffix}/" \
+           -e 's/^%files \(.*\)-f %{name}\(.*\)\.files/%files \1-f '"${pkgname}"'\2.files/' \
+           -e '/^Source0:/a\
+Provides: '"${pkgname}"' = %{version}-%{release}\
+Provides: '"${pkgname}"'%{_isa} = %{version}-%{release}' \
+           -e '/^%package devel/a\
+Provides: '"${pkgname}"'-devel = %{version}-%{release}\
+Provides: '"${pkgname}"'-devel%{_isa} = %{version}-%{release}' \
+           "${pkgname}${suffix}.spec"
+}
+
 # Setup the directories
 mkdir -p "${WORKDIR}/config"
 mkdir -p "${WORKDIR}/sources"
@@ -174,16 +202,17 @@ config_opts['plugin_conf']['bind_mount_opts']['dirs'].append(('$REPODIR', '$REPO
 cabal update
 
 # Build some newer versions of dependencies
+# Append -weldr to the package name so they don't conflict with the Fedora versions
 if ! available "ghc-memory >= 0.14.6" ; then
-    rebuild memory
+    rebuild memory -weldr
 fi
 
 if ! available "ghc-gitrev >= 1.3.1" ; then
-    rebuild gitrev
+    rebuild gitrev -weldr
 fi
 
 if ! available "ghc-cryptonite >= 0.24" ; then
-    rebuild cryptonite
+    rebuild cryptonite -weldr
 fi
 
 # Download bdcs and build its deps
