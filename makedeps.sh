@@ -120,6 +120,12 @@ rebuild() {
 fixspec() {
     local pkgname="$1"
 
+    # Whether cabal-rpm specifies that tests should be run or not
+    # depends on whether it can find the dependencies installed on the
+    # host system. Instead of having this dependent behavior (and sometimes
+    # having to fix someone else's tests) just always disable tests.
+    sed -i 's/%bcond_without tests/%bcond_with tests/' "${pkgname}.spec"
+
     if [[ "$pkgname" = "ghc-haskell-gi" || "$pkgname" = "ghc-hspec-discover" ]]; then
         # I'm not real clear on what this line intends to do, but it's wrong
         sed -i '/mv %{buildroot}%{_ghcdocdir}\/{,ghc-}%{name}/d' "${pkgname}.spec"
