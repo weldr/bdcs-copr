@@ -108,6 +108,12 @@ rebuild() {
     local suffix="$2"
     local pkgname="$(rpmname "${cabalname}")"
 
+    # ghc-authenticate-oauth has a requirement on RSA < 2.3, so make
+    # sure we don't build too new of a version
+    if [ "$cabalname" = "RSA" ]; then
+        cabalname="RSA-2.2.0"
+    fi
+
     builddeps "$cabalname"
 
     # Spit out a spec file and build it
@@ -221,7 +227,15 @@ fi
   git clone https://www.github.com/weldr/bdcs &&
   cd bdcs/importer &&
   builddeps db 
-)
+) || exit 1
+
+# Same for bdcs-cli
+( cd build &&
+  rm -rf bdcs-cli &&
+  git clone https://www.github.com/weldr/bdcs-cli &&
+  cd bdcs-cli &&
+  builddeps BDCSCli
+) || exit 1
 
 # Don't know how to tell cabal-rpm to include test dependencies, so just
 # add one more by hand
