@@ -226,7 +226,7 @@ fi
   rm -rf bdcs &&
   git clone https://www.github.com/weldr/bdcs &&
   cd bdcs/importer &&
-  builddeps db 
+  builddeps bdcs
 ) || exit 1
 
 # Same for bdcs-cli
