@@ -73,7 +73,17 @@ buildpkg() {
 
 # Test whether a package is already available or not
 available() {
+    # Stupid special case: haskell-gi-overloading is a feature marker. It doesn't compile
+    # any object files or expose any modules, so the way cabal-rpm handles this is to
+    # generate a -devel package and no main package. Any package with haskell-gi-overloading
+    # in the cabal dependencies will end up with a RPM dependency on ghc-haskell-gi-overloading-devel,
+    # so we just leave it like that instead of editing all the other spec files.
+    # What all that means right here is that we have to check for the -devel package to say whether
+    # it's available or not, because the main package does not exist.
     local pkgname="$1"
+    if [ "$pkgname" = "ghc-haskell-gi-overloading" ]; then
+        pkgname="ghc-haskell-gi-overloading-devel"
+    fi
 
     local result_count="$(dnf repoquery -q --whatprovides "$pkgname" --repofrompath weldr,"$REPODIR" | wc -l)"
 
