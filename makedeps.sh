@@ -243,7 +243,7 @@ else
 
     # Build some newer versions of dependencies
     # Append -weldr to the package name so they don't conflict with the Fedora versions
-    if ! available "ghc-memory >= 0.14.6" ; then
+    if ! available "ghc-memory >= 0.14.7" ; then
         rebuild memory -weldr
     fi
 
