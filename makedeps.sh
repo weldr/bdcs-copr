@@ -19,6 +19,9 @@ REPODIR="${PWD}/repo"
 # SRPMs
 SRPMDIR="${PWD}/srpms"
 
+# debuginfo
+DEBUGDIR="${PWD}/debuginfo"
+
 ### FUNCTIONS
 runmock() {
     # We need to use --old-chroot because of https://bugzilla.redhat.com/show_bug.cgi?id=1467299
@@ -59,6 +62,7 @@ buildpkg() {
 
     # Save the results
     mv "${WORKDIR}/results/"*.src.rpm "${SRPMDIR}" || exit 1
+    mv "${WORKDIR}/results/"*-debuginfo-*.rpm "${DEBUGDIR}" 2>/dev/null || :
     mv "${WORKDIR}/results/"*.rpm "${REPODIR}" || exit 1
     createrepo_c "${REPODIR}" || exit 1
 
@@ -199,6 +203,7 @@ mkdir -p "${WORKDIR}/sources"
 mkdir -p "${WORKDIR}/results"
 mkdir -p "${REPODIR}"
 mkdir -p "${SRPMDIR}"
+mkdir -p "${DEBUGDIR}"
 createrepo_c "${REPODIR}"
 dnf clean expire-cache
 
@@ -241,8 +246,13 @@ else
     fi
 
     # Built from a local copy of the .spec
-    ( cd "$BASEDIR" && buildpkg "libgit2" ) || exit 1
-    ( cd "$BASEDIR" && buildpkg "libgit2-glib" ) || exit 1
+    if ! available "libgit2 >= 0.26"; then
+        ( cd "$BASEDIR" && buildpkg "libgit2" ) || exit 1
+    fi
+
+    if ! available "libgit2-glib >= 0.26.0"; then
+        ( cd "$BASEDIR" && buildpkg "libgit2-glib" ) || exit 1
+    fi
 
     # Download bdcs and build its deps
     ( cd build &&
