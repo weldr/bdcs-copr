@@ -218,42 +218,51 @@ config_opts['plugin_conf']['bind_mount_opts']['dirs'].append(('$REPODIR', '$REPO
 # Before anything, need an up-to-date package list
 cabal update
 
-# Build some newer versions of dependencies
-# Append -weldr to the package name so they don't conflict with the Fedora versions
-if ! available "ghc-memory >= 0.14.6" ; then
-    rebuild memory -weldr
-fi
+# If a list of packages was specified, rebuild that
+if [ "$#" -gt 0 ]; then
+    for pkg in "$@"; do
+        buildpkg "$pkg"
+    done
+else
+    # Otherwise, try to create and rebuild everything
 
-if ! available "ghc-gitrev >= 1.3.1" ; then
-    rebuild gitrev -weldr
-fi
+    # Build some newer versions of dependencies
+    # Append -weldr to the package name so they don't conflict with the Fedora versions
+    if ! available "ghc-memory >= 0.14.6" ; then
+        rebuild memory -weldr
+    fi
 
-if ! available "ghc-cryptonite >= 0.24" ; then
-    rebuild cryptonite -weldr
-fi
+    if ! available "ghc-gitrev >= 1.3.1" ; then
+        rebuild gitrev -weldr
+    fi
 
-# Built from a local copy of the .spec
-( cd "$BASEDIR" && buildpkg "libgit2" ) || exit 1
-( cd "$BASEDIR" && buildpkg "libgit2-glib" ) || exit 1
+    if ! available "ghc-cryptonite >= 0.24" ; then
+        rebuild cryptonite -weldr
+    fi
 
-# Download bdcs and build its deps
-( cd build &&
-  rm -rf bdcs &&
-  git clone https://www.github.com/weldr/bdcs &&
-  cd bdcs/importer &&
-  builddeps bdcs
-) || exit 1
+    # Built from a local copy of the .spec
+    ( cd "$BASEDIR" && buildpkg "libgit2" ) || exit 1
+    ( cd "$BASEDIR" && buildpkg "libgit2-glib" ) || exit 1
 
-# Same for bdcs-cli
-( cd build &&
-  rm -rf bdcs-cli &&
-  git clone https://www.github.com/weldr/bdcs-cli &&
-  cd bdcs-cli &&
-  builddeps BDCSCli
-) || exit 1
+    # Download bdcs and build its deps
+    ( cd build &&
+      rm -rf bdcs &&
+      git clone https://www.github.com/weldr/bdcs &&
+      cd bdcs/importer &&
+      builddeps bdcs
+    ) || exit 1
 
-# Don't know how to tell cabal-rpm to include test dependencies, so just
-# add one more by hand
-if ! available "ghc-hspec"; then
-    rebuild hspec
+    # Same for bdcs-cli
+    ( cd build &&
+      rm -rf bdcs-cli &&
+      git clone https://www.github.com/weldr/bdcs-cli &&
+      cd bdcs-cli &&
+      builddeps BDCSCli
+    ) || exit 1
+
+    # Don't know how to tell cabal-rpm to include test dependencies, so just
+    # add one more by hand
+    if ! available "ghc-hspec"; then
+        rebuild hspec
+    fi
 fi
