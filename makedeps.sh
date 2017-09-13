@@ -255,6 +255,13 @@ else
         rebuild cryptonite -weldr
     fi
 
+    # The version of distributive in Fedora has not been rebuilt against its
+    # dependencies (in particular base-orphans) now in F26 updates. Update to
+    # the latest version to work around this mess.
+    if ! available "ghc-distributive >= 0.5.3" ; then
+        rebuild distributive -weldr
+    fi
+
     # Built from a local copy of the .spec
     if ! available "libgit2 >= 0.26"; then
         ( cd "$BASEDIR" && buildpkg "libgit2" ) || exit 1
