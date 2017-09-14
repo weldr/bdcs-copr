@@ -38,7 +38,8 @@ runmock() {
 rpmname() {
     local cabalname="$1"
 
-    if [ "$cabalname" = "hsc2hs" ]; then
+    if [ "$cabalname" = "hsc2hs" -o \
+         "$cabalname" = "hoogle" ]; then
         echo "$1"
     else
         echo "ghc-$1"
@@ -116,6 +117,18 @@ builddeps() {
     done || exit 1
 }
 
+makespec() {
+    local cabalname="$1"
+
+    # cabal-rpm doesn't treat hoogle as a package with executables for some reason,
+    # so just force it.
+    if [ "$cabalname" = "hoogle" ]; then
+        cabal-rpm spec -b "${cabalname}"
+    else
+        cabal-rpm spec "${cabalname}"
+    fi
+}
+
 # Build a package and its dependencies
 rebuild() {
     local cabalname="$1"
@@ -132,7 +145,7 @@ rebuild() {
 
     # Spit out a spec file and build it
     ( cd "$BASEDIR" &&
-      cabal-rpm spec "${cabalname}" &&
+      makespec "${cabalname}" &&
       fixspec "${pkgname}" &&
       addsuffix "${pkgname}" "${suffix}" &&
       buildpkg "${pkgname}${suffix}" ) || exit 1
@@ -176,6 +189,9 @@ Requires: %{name}%{?_isa} = %{version}-%{release}' -e '$a\
         sed -i -e '1i\
 %global cabal_configure_options -fsystemlib\
 BuildRequires: sqlite-devel' "${pkgname}.spec"
+    elif [[ "$pkgname" = "hoogle" ]]; then
+        # similar mystery line
+        sed -i '/mv %{buildroot}%{_ghclicensedir}\/{,ghc-}%{name}/d' "${pkgname}.spec"
     else
         return 0
     fi
@@ -291,5 +307,17 @@ else
     # add one more by hand
     if ! available "ghc-hspec"; then
         rebuild hspec
+    fi
+
+    # BONUS ROUND
+    # build hoogle against all the stuff we built
+    # tls-session-manager (needed for warp-tls, needed for hoogle) requires a
+    # newer version of psqueues
+    if ! available "ghc-psqueues >= 0.2.3"; then
+        rebuild psqueues -weldr
+    fi
+
+    if ! available "hoogle"; then
+        rebuild hoogle
     fi
 fi
