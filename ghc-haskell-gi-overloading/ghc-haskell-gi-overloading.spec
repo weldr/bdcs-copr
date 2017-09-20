@@ -16,6 +16,9 @@ Source0:        https://hackage.haskell.org/package/%{pkgver}/%{pkgver}.tar.gz
 BuildRequires:  ghc-Cabal-devel
 BuildRequires:  ghc-rpm-macros
 
+# Nothing is actually compiled, so make it noarch
+BuildArch:      noarch
+
 %description
 Control overloading support in haskell-gi generated bindings.
 
