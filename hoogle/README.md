@@ -8,4 +8,4 @@ This package requires the following packages not available in Fedora:
 * [ghc-process-extras](../ghc-process-extras)
 * [ghc-warp-tls](../ghc-warp-tls)
 
-[hoogle status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/hoogle/status_image/last_build.png)
+![hoogle status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/hoogle/status_image/last_build.png)

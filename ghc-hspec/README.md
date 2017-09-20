@@ -6,4 +6,4 @@ This package requires the following packages not available in Fedora:
 * [ghc-hspec-discover](../ghc-hspec-discover)
 * [ghc-hspec-expectations](../ghc-hspec-expectations)
 
-[ghc-hspec status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-hspec/status_image/last_build.png)
+![ghc-hspec status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-hspec/status_image/last_build.png)

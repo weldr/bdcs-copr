@@ -9,4 +9,4 @@ This package requires the following packages not available in Fedora:
 * [ghc-x509](../ghc-x509)
 * [ghc-x509-store](../ghc-x509-store)
 
-[ghc-x509-validation status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-x509-status/status_image/last_build.png)
+![ghc-x509-validation status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-x509-status/status_image/last_build.png)

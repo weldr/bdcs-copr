@@ -4,4 +4,4 @@ This package requires the following packages not available in Fedora:
 
 * [ghc-http-client-tls](../ghc-http-client-tls)
 
-[ghc-http-conduit status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-http-conduit/status_image/last_build.png)
+![ghc-http-conduit status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-http-conduit/status_image/last_build.png)

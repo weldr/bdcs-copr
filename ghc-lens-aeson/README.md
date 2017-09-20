@@ -4,4 +4,4 @@ This package requires the following packages not available in Fedora:
 
 * [ghc-lens](../ghc-lens)
 
-[ghc-lens-aeson status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-lens-aeson/status_image/last_build.png)
+![ghc-lens-aeson status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-lens-aeson/status_image/last_build.png)
