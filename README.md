@@ -6,7 +6,7 @@ build things in against F26:
 
 * [ghc-memory-weldr](ghc-memory-weldr) (memory-0.14.7) ![ghc-memory-weldr status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-memory-weldr/status_image/last_build.png)
 * [ghc-attoparsec-binary](ghc-attoparsec-binary) ![ghc-attoparsec-binary status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-attoparsec-binary/status_image/last_build.png)
-* [chunked-data](ghc-chunked-data) ![ghc-chunked-data status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-chunked-data/status_image/last_build.png)
+* [ghc-chunked-data](ghc-chunked-data) ![ghc-chunked-data status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-chunked-data/status_image/last_build.png)
 * [ghc-vector-algorithms](ghc-vector-algorithms) ![ghc-vector-algorithms status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-vector-algorithms/status_image/last_build.png)
 * [ghc-mono-traversable](ghc-mono-traversable) ![ghc-mono-traversable status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-mono-traversable/status_image/last_build.png)
 * [ghc-conduit-combinators](ghc-conduit-combinators) ![ghc-conduit-combinators status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-conduit-combinators/status_image/last_build.png)
@@ -53,8 +53,8 @@ build things in against F26:
 * [ghc-bifunctors](ghc-bifunctors) ![ghc-bifunctors status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-bifunctors/status_image/last_build.png)
 * [ghc-semigroupoids](ghc-semigroupoids) ![ghc-semigroupoids status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-semigroupoids/status_image/last_build.png)
 * [ghc-profunctors](ghc-profunctors) ![ghc-profunctors status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-profunctors/status_image/last_build.png)
-* [ghc-adjunctions](ghc-adjunctions) ![ghc-adjunctions status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-adjunctions/status_image/last_build.png)
 * [ghc-free](ghc-free) ![ghc-free status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-free/status_image/last_build.png)
+* [ghc-adjunctions](ghc-adjunctions) ![ghc-adjunctions status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-adjunctions/status_image/last_build.png)
 * [ghc-kan-extensions](ghc-kan-extensions) ![ghc-kan-extensions status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-kan-extensions/status_image/last_build.png)
 * [ghc-lens](ghc-lens) ![ghc-lens status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-lens/status_image/last_build.png)
 * [ghc-lens-aeson](ghc-lens-aeson) ![ghc-lens-aeson status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-lens-aeson/status_image/last_build.png)
@@ -70,3 +70,26 @@ build things in against F26:
 * [ghc-ListLike](ghc-ListLike) ![ghc-ListLike status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-ListLike/status_image/last_build.png)
 * [ghc-process-extras](ghc-process-extras) ![ghc-process-extras status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-process-extras/status_image/last_build.png)
 * [hoogle](hoogle) ![hoogle status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/hoogle/status_image/last_build.png)
+
+Fedora 27 already has a sufficiently new version of libgit2.
+Fedora 27 does *not* have the following:
+  * [ghc-hourglass](ghc-hourglass). Build before ghc-asn1-types.
+  * [ghc-microlens-th](ghc-microlens-th). Build before ghc-persistent-sqlite.
+  * [ghc-aeson-compat](ghc-aeson-compat). Build before ghc-persistent-template.
+  * [ghc-pem](ghc-pem). Build before ghc-x509.
+  * [ghc-generic-deriving](ghc-generic-deriving). Build before ghc-process-extras.
+  * [ghc-http-client](ghc-http-client). Build before ghc-authenticate-oauth.
+  * [ghc-socks](ghc-socks). Build before ghc-connection.
+
+Rawhide has the following packages:
+  * ghc-bifunctors
+  * ghc-comonad
+  * ghc-esqueleto
+  * ghc-http-api-data
+  * ghc-persistent
+  * ghc-persistent-sqlite
+  * ghc-persistent-template
+  * new enough libgit2
+
+Rawhide has a sufficiently new version of ghc-cryptonite, but build -weldr
+anyway to relink against ghc-memory-weldr.
