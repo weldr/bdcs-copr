@@ -64,12 +64,6 @@ build things in against F26:
 * [ghc-authenticate-oauth](ghc-authenticate-oauth) ![ghc-authenticate-oauth status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-authenticate-oauth/status_image/last_build.png)
 * [ghc-psqueues-weldr](ghc-psqueues-weldr) ![ghc-psqueues-weldr status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-psqueues-weldr/status_image/last_build.png)
 * [ghc-wreq](ghc-wreq) ![ghc-wreq status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-wreq/status_image/last_build.png)
-* [ghc-tls-session-manager](ghc-tls-session-manager) ![ghc-tls-session-manager status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-tls-session-manager/status_image/last_build.png)
-* [ghc-warp-tls](ghc-warp-tls) ![ghc-warp-tls status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-warp-tls/status_image/last_build.png)
-* [ghc-fmlist](ghc-fmlist) ![ghc-fmlist status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-fmlist/status_image/last_build.png)
-* [ghc-ListLike](ghc-ListLike) ![ghc-ListLike status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-ListLike/status_image/last_build.png)
-* [ghc-process-extras](ghc-process-extras) ![ghc-process-extras status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-process-extras/status_image/last_build.png)
-* [hoogle](hoogle) ![hoogle status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/hoogle/status_image/last_build.png)
 
 Fedora 27 already has a sufficiently new version of libgit2.
 Fedora 27 does *not* have the following:
@@ -77,7 +71,6 @@ Fedora 27 does *not* have the following:
   * [ghc-microlens-th](ghc-microlens-th). Build before ghc-persistent-sqlite.
   * [ghc-aeson-compat](ghc-aeson-compat). Build before ghc-persistent-template.
   * [ghc-pem](ghc-pem). Build before ghc-x509.
-  * [ghc-generic-deriving](ghc-generic-deriving). Build before ghc-process-extras.
   * [ghc-http-client](ghc-http-client). Build before ghc-authenticate-oauth.
   * [ghc-socks](ghc-socks). Build before ghc-connection.
 
