@@ -8,4 +8,4 @@ This package requires the following packages not available in Fedora:
 * [ghc-profunctors](../ghc-profunctors)
 * [ghc-semigroupoids](../ghc-semigroupoids)
 
-![ghc-adjunctions status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-adjunctions/status_image/last_build.png)
+![ghc-adjunctions status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-adjunctions/status_image/last_build.png)

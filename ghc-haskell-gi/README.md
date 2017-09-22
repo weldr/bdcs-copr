@@ -6,4 +6,4 @@ This package requires the following packages not available in Fedora:
 
 * [ghc-haskell-gi-base](../ghc-haskell-gi-base)
 
-![ghc-haskell-gi status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-haskell-gi/status_image/last_build.png)
+![ghc-haskell-gi status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-haskell-gi/status_image/last_build.png)

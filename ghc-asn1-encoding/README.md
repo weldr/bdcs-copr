@@ -4,4 +4,4 @@ This package requires the following packages not available in Fedora:
 
 * [ghc-asn1-types](../ghc-asn1-types)
 
-![ghc-asn1-encoding status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-asn1-encoding/status_image/last_build.png)
+![ghc-asn1-encoding status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-asn1-encoding/status_image/last_build.png)

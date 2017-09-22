@@ -8,4 +8,4 @@ This package requires the following packages not available in Fedora:
 * [ghc-cryptonite-weldr](../ghc-cryptonite-weldr)
 * [ghc-memory-weldr](../ghc-memory-weldr)
 
-![ghc-x509 status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-x509/status_image/last_build.png)
+![ghc-x509 status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-x509/status_image/last_build.png)

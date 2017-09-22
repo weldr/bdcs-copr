@@ -10,4 +10,4 @@ This package requires the following packages not available in Fedora:
 * [ghc-haskell-gi-overloading](../ghc-haskell-gi-overloading)
 * [libgit2-glib](../libgit2-glib)
 
-![ghc-gi-ggit status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-gi-ggit/status_image/last_build.png)
+![ghc-gi-ggit status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-gi-ggit/status_image/last_build.png)

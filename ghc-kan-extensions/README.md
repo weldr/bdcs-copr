@@ -8,4 +8,4 @@ This package requires the following packages not available in Fedora:
 * [ghc-free](../ghc-free)
 * [ghc-semigroupoids](../ghc-semigroupoids)
 
-![ghc-kan-extensions status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-kan-extensions/status_image/last_build.png)
+![ghc-kan-extensions status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-kan-extensions/status_image/last_build.png)

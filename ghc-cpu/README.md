@@ -3,4 +3,4 @@ endianness and architecture.
 
 This package does not require anything not available in Fedora.
 
-![ghc-cpu status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-cpu/status_image/last_build.png)
+![ghc-cpu status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-cpu/status_image/last_build.png)

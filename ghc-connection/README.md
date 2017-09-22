@@ -8,4 +8,4 @@ This package requires the following packages not available in Fedora:
 * [ghc-x509-system](../ghc-x509-system)
 * [ghc-x509-validation](../ghc-x509-validation)
 
-![ghc-connection status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-connection/status_image/last_build.png)
+![ghc-connection status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-connection/status_image/last_build.png)

@@ -4,4 +4,4 @@ This package requires the following packages not in Fedora:
 
 * [ghc-vector-algorithms](../ghc-vector-algorithms)
 
-![ghc-mono-traversable status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-mono-traversable/status_image/last_build.png)
+![ghc-mono-traversable status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-mono-traversable/status_image/last_build.png)

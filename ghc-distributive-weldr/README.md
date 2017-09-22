@@ -5,4 +5,4 @@ a while, so we rebuilt the newest version and now we're sticking with it.
 
 This package does not require anything not available in Fedora.
 
-![ghc-distributive-weldr status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-distributive-weldr/status_image/last_build.png)
+![ghc-distributive-weldr status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-distributive-weldr/status_image/last_build.png)

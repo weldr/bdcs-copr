@@ -7,4 +7,4 @@ This package requires the following packages not available in Fedora:
 * [ghc-memory-weldr](../ghc-memory-weldr)
 * [ghc-tls](../ghc-tls)
 
-![ghc-http-client-tls status](https://copr.fedorainfracloud.org/coprs/dshea/bdcs-haskell-deps/package/ghc-http-client-tls/status_image/last_build.png)
+![ghc-http-client-tls status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-http-client-tls/status_image/last_build.png)
