@@ -8,7 +8,7 @@
 
 Name:           ghc-%{pkg_name}
 Version:        5.4.2
-Release:        3%{?dist}
+Release:        2%{?dist}
 Summary:        Bifunctors
 
 License:        BSD
@@ -81,9 +81,6 @@ This package provides the Haskell %{pkg_name} library development files.
 
 
 %changelog
-* Wed Sep 27 2017 David Shea <dshea@redhat.com> - 5.4.2-3
-- Rebuild against comonad from Fedora
-
 * Tue Sep 12 2017 David Shea <dshea@redhat.com> - 5.4.2-2
 - Rebuild against base-orphans-0.6 and various other rebuilds
 

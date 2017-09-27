@@ -3,6 +3,7 @@ Monads for free
 This packages requires the following packages not available in Fedora:
 
 * [ghc-bifunctors](../ghc-bifunctors)
+* [ghc-comonad-weldr](../ghc-comonad-weldr)
 * [ghc-distributive-weldr](../ghc-distributive-weldr)
 * [ghc-profunctors](../ghc-profunctors)
 * [ghc-semigroupoids](../ghc-semigroupoids)

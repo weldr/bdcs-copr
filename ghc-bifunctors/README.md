@@ -1,5 +1,7 @@
 Bifunctors
 
-This package does not require anything not provided by Fedora.
+This package requires the following packages not avaialble in Fedora:
+
+* [ghc-comonad-weldr](../ghc-comonad-weldr)
 
 ![ghc-bifunctors status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-bifunctors/status_image/last_build.png)

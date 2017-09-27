@@ -8,7 +8,7 @@
 
 Name:           ghc-%{pkg_name}
 Version:        4.15.4
-Release:        3%{?dist}
+Release:        2%{?dist}
 Summary:        Lenses, Folds and Traversals
 
 License:        BSD
@@ -196,9 +196,6 @@ This package provides the Haskell %{pkg_name} library development files.
 
 
 %changelog
-* Wed Sep 27 2017 David Shea <dshea@redhat.com> - 4.15.4-3
-- Rebuild against comonad now in Fedora
-
 * Tue Sep 12 2017 David Shea <dshea@redhat.com> - 4.15.4-2
 - Rebuild against th-abstraction-0.2.5.0 and various other rebuilt dependencies
 

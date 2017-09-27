@@ -8,7 +8,7 @@
 
 Name:           ghc-%{pkg_name}
 Version:        1.0.2
-Release:        3%{?dist}
+Release:        2%{?dist}
 Summary:        Law-abiding lenses for aeson
 
 License:        MIT
@@ -84,9 +84,6 @@ This package provides the Haskell %{pkg_name} library development files.
 
 
 %changelog
-* Wed Sep 27 2017 David Shea <dshea@redhat.com> - 1.0.2-3
-- Rebuild against dependencies rebuilt against comonad in Fedora
-
 * Tue Sep 12 2017 David Shea <dshea@redhat.com> - 1.0.2-2
 - Rebuild against various rebuilt dependencies
 

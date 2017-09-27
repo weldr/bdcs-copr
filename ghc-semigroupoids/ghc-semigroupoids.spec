@@ -8,7 +8,7 @@
 
 Name:           ghc-%{pkg_name}
 Version:        5.2.1
-Release:        3%{?dist}
+Release:        2%{?dist}
 Summary:        Semigroupoids: Category sans id
 
 License:        BSD
@@ -119,9 +119,6 @@ This package provides the Haskell %{pkg_name} library development files.
 
 
 %changelog
-* Wed Sep 27 2017 David Shea <dshea@redhat.com> - 5.2.1-3
-- Rebuild against comonad now in Fedora
-
 * Tue Sep 12 2017 David Shea <dshea@redhat.com> - 5.2.1-2
 - Rebuild against various rebuilt dependencies
 

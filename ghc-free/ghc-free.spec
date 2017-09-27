@@ -6,7 +6,7 @@
 
 Name:           ghc-%{pkg_name}
 Version:        4.12.4
-Release:        3%{?dist}
+Release:        2%{?dist}
 Summary:        Monads for free
 
 License:        BSD
@@ -93,9 +93,6 @@ This package provides the Haskell %{pkg_name} library development files.
 
 
 %changelog
-* Wed Sep 27 2017 David Shea <dshea@redhat.com> - 4.12.4-3
-- Rebuild against comonad now in Fedora
-
 * Tue Sep 12 2017 David Shea <dshea@redhat.com> - 4.12.4-2
 - Rebuild against rebuilt dependencies
 
