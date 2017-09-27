@@ -48,6 +48,7 @@ build things in against F26:
 * [ghc-gi-ggit](ghc-gi-ggit) ![ghc-gi-ggit status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-gi-ggit/status_image/last_build.png)
 * [ghc-htoml](ghc-htoml) ![ghc-htoml status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-htoml/status_image/last_build.png)
 * [ghc-distributive-weldr](ghc-distributive-weldr) ![ghc-distributive-weldr status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-distributive-weldr/status_image/last_build.png)
+* [ghc-comonad-weldr](ghc-comonad-weldr) ![ghc-comonad-weldr status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-comonad-weldr/status_image/last_build.png)
 * [ghc-bifunctors](ghc-bifunctors) ![ghc-bifunctors status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-bifunctors/status_image/last_build.png)
 * [ghc-semigroupoids](ghc-semigroupoids) ![ghc-semigroupoids status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-semigroupoids/status_image/last_build.png)
 * [ghc-profunctors](ghc-profunctors) ![ghc-profunctors status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-profunctors/status_image/last_build.png)
@@ -72,7 +73,6 @@ Fedora 27 does *not* have the following, due to the ongoing Beta freeze:
   * [ghc-pem](ghc-pem). Build before ghc-x509.
   * [ghc-http-client](ghc-http-client). Build before ghc-authenticate-oauth.
   * [ghc-socks](ghc-socks). Build before ghc-connection.
-  * [ghc-comonad](ghc-comonad). Build before ghc-bifunctors.
 
 Rawhide has the following packages:
   * ghc-bifunctors
@@ -81,6 +81,7 @@ Rawhide has the following packages:
   * ghc-persistent-sqlite
   * ghc-persistent-template
   * new enough libgit2
+  * comonad with non-busted dependencies
 
 Rawhide has a sufficiently new version of ghc-cryptonite, but build -weldr
 anyway to relink against ghc-memory-weldr.

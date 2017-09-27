@@ -1,4 +1,6 @@
-Comonads
+This is the comonad package with "-weldr" stuck to the end of the name so that
+it does not interfere with the Fedora version of comonad, which is broken in
+Fedora 26.
 
 This package requires the following packages not available in Fedora:
 

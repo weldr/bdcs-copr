@@ -14,6 +14,8 @@ Summary:        Comonads
 License:        BSD
 Url:            https://hackage.haskell.org/package/%{pkg_name}
 Source0:        https://hackage.haskell.org/package/%{pkgver}/%{pkgver}.tar.gz
+Provides:       ghc-comonad = %{version}-%{release}
+Provides:       ghc-comonad%{_isa} = %{version}-%{release}
 
 BuildRequires:  ghc-Cabal-devel
 BuildRequires:  ghc-rpm-macros
@@ -36,6 +38,8 @@ Comonads.
 
 
 %package devel
+Provides:       ghc-comonad-devel = %{version}-%{release}
+Provides:       ghc-comonad-devel%{_isa} = %{version}-%{release}
 Summary:        Haskell %{pkg_name} library development files
 Provides:       %{name}-static = %{version}-%{release}
 Requires:       ghc-compiler = %{ghc_version}
@@ -71,11 +75,11 @@ This package provides the Haskell %{pkg_name} library development files.
 %ghc_pkg_recache
 
 
-%files -f %{name}.files
+%files -f ghc-comonad.files
 %license LICENSE
 
 
-%files devel -f %{name}-devel.files
+%files devel -f ghc-comonad-devel.files
 %doc CHANGELOG.markdown README.markdown examples
 
 
