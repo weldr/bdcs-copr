@@ -6,7 +6,7 @@
 
 %bcond_with tests
 
-Name:           ghc-%{pkg_name}
+Name:           ghc-%{pkg_name}-weldr
 Version:        5.0.2
 Release:        2%{?dist}
 Summary:        Comonads
