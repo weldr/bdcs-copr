@@ -14,7 +14,6 @@ build things in against F26:
 * [ghc-cond](ghc-cond) ![ghc-cond status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-cond/status_image/last_build.png)
 * [ghc-cpu](ghc-cpu) ![ghc-cpu status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-cpu/status_image/last_build.png)
 * [ghc-cryptonite-weldr](ghc-cryptonite-weldr) ![ghc-cryptonite-weldr status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-cryptonite-weldr/status_image/last_build.png)
-* [ghc-http-api-data](ghc-http-api-data) ![ghc-http-api-data status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-http-api-data/status_image/last_build.png)
 * [ghc-persistent](ghc-persistent) ![ghc-persistent status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-persistent/status_image/last_build.png)
 * [ghc-esqueleto](ghc-esqueleto) ![ghc-esqueleto status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-esqueleto/status_image/last_build.png)
 * [ghc-haskell-gi-base](ghc-haskell-gi-base) ![ghc-haskell-gi-base status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-haskell-gi-base/status_image/last_build.png)
@@ -49,7 +48,6 @@ build things in against F26:
 * [ghc-gi-ggit](ghc-gi-ggit) ![ghc-gi-ggit status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-gi-ggit/status_image/last_build.png)
 * [ghc-htoml](ghc-htoml) ![ghc-htoml status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-htoml/status_image/last_build.png)
 * [ghc-distributive-weldr](ghc-distributive-weldr) ![ghc-distributive-weldr status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-distributive-weldr/status_image/last_build.png)
-* [ghc-comonad](ghc-comonad) ![ghc-comonad status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-comonad/status_image/last_build.png)
 * [ghc-bifunctors](ghc-bifunctors) ![ghc-bifunctors status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-bifunctors/status_image/last_build.png)
 * [ghc-semigroupoids](ghc-semigroupoids) ![ghc-semigroupoids status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-semigroupoids/status_image/last_build.png)
 * [ghc-profunctors](ghc-profunctors) ![ghc-profunctors status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-profunctors/status_image/last_build.png)
@@ -66,19 +64,19 @@ build things in against F26:
 * [ghc-wreq](ghc-wreq) ![ghc-wreq status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-wreq/status_image/last_build.png)
 
 Fedora 27 already has a sufficiently new version of libgit2.
-Fedora 27 does *not* have the following:
+Fedora 27 does *not* have the following, due to the ongoing Beta freeze:
   * [ghc-hourglass](ghc-hourglass). Build before ghc-asn1-types.
+  * [ghc-http-api-data](ghc-http-api-data). Build before ghc-persistent.
   * [ghc-microlens-th](ghc-microlens-th). Build before ghc-persistent-sqlite.
   * [ghc-aeson-compat](ghc-aeson-compat). Build before ghc-persistent-template.
   * [ghc-pem](ghc-pem). Build before ghc-x509.
   * [ghc-http-client](ghc-http-client). Build before ghc-authenticate-oauth.
   * [ghc-socks](ghc-socks). Build before ghc-connection.
+  * [ghc-comonad](ghc-comonad). Build before ghc-bifunctors.
 
 Rawhide has the following packages:
   * ghc-bifunctors
-  * ghc-comonad
   * ghc-esqueleto
-  * ghc-http-api-data
   * ghc-persistent
   * ghc-persistent-sqlite
   * ghc-persistent-template

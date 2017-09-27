@@ -2,7 +2,6 @@ Adjunctions and representable functors
 
 This package requires the following packages not available in Fedora:
 
-* [ghc-comonad](../ghc-comonad)
 * [ghc-distributive-weldr](../ghc-distributive-weldr)
 * [ghc-free](../ghc-free)
 * [ghc-profunctors](../ghc-profunctors)

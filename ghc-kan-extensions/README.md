@@ -3,7 +3,6 @@ Kan extensions, Kan lifts, various forms of the Yoneda lemma, and (co)density (c
 This package requires the following packages not available in Fedora:
 
 * [ghc-adjunctions](../ghc-adjunctions)
-* [ghc-comonad](../ghc-comonad)
 * [ghc-distributive-weldr](../ghc-distributive-weldr)
 * [ghc-free](../ghc-free)
 * [ghc-semigroupoids](../ghc-semigroupoids)
