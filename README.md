@@ -29,7 +29,7 @@ build things in against F26:
 * [ghc-asn1-parse](ghc-asn1-parse) ![ghc-asn1-parse status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-asn1-parse/status_image/last_build.png)
 * [ghc-x509](ghc-x509) ![ghc-x509 status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-x509/status_image/last_build.png)
 * [ghc-x509-store](ghc-x509-store) ![ghc-x509-store status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-x509-store/status_image/last_build.png)
-* [ghc-x509-validation](ghc-x509-validation) ![ghc-x509-validation status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-x509-status/status_image/last_build.png)
+* [ghc-x509-validation](ghc-x509-validation) ![ghc-x509-validation status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-x509-validation/status_image/last_build.png)
 * [ghc-x509-system](ghc-x509-system) ![ghc-x509-system status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-x509-system/status_image/last_build.png)
 * [ghc-tls](ghc-tls) ![ghc-tls status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-tls/status_image/last_build.png)
 * [ghc-connection](ghc-connection) ![ghc-connection status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-connection/status_image/last_build.png)
