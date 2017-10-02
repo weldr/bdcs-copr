@@ -65,14 +65,6 @@ build things in against F26:
 * ![ghc-wreq status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-wreq/status_image/last_build.png) [ghc-wreq](ghc-wreq)
 
 Fedora 27 already has a sufficiently new version of libgit2.
-Fedora 27 does *not* have the following, due to the ongoing Beta freeze:
-  * [ghc-hourglass](ghc-hourglass). Build before ghc-asn1-types.
-  * [ghc-http-api-data](ghc-http-api-data). Build before ghc-persistent.
-  * [ghc-microlens-th](ghc-microlens-th). Build before ghc-persistent-sqlite.
-  * [ghc-aeson-compat](ghc-aeson-compat). Build before ghc-persistent-template.
-  * [ghc-pem](ghc-pem). Build before ghc-x509.
-  * [ghc-http-client](ghc-http-client). Build before ghc-authenticate-oauth.
-  * [ghc-socks](ghc-socks). Build before ghc-connection.
 
 Rawhide has the following packages:
   * ghc-bifunctors
