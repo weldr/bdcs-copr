@@ -46,7 +46,6 @@ build things in against F26:
 * ![libgit2-glib status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/libgit2-glib/status_image/last_build.png) [libgit2-glib](libgit2-glib)
 * ![ghc-gi-ggit status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-gi-ggit/status_image/last_build.png) [ghc-gi-ggit](ghc-gi-ggit)
 * ![ghc-htoml status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-htoml/status_image/last_build.png) [ghc-htoml](ghc-htoml)
-* ![ghc-distributive-weldr status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-distributive-weldr/status_image/last_build.png) [ghc-distributive-weldr](ghc-distributive-weldr)
 * ![ghc-bifunctors status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-bifunctors/status_image/last_build.png) [ghc-bifunctors](ghc-bifunctors)
 * ![ghc-semigroupoids status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-semigroupoids/status_image/last_build.png) [ghc-semigroupoids](ghc-semigroupoids)
 * ![ghc-profunctors status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-profunctors/status_image/last_build.png) [ghc-profunctors](ghc-profunctors)
