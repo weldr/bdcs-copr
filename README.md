@@ -14,7 +14,6 @@ build things in against F26:
 * ![ghc-cond status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-cond/status_image/last_build.png) [ghc-cond](ghc-cond)
 * ![ghc-cpu status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-cpu/status_image/last_build.png) [ghc-cpu](ghc-cpu)
 * ![ghc-cryptonite-weldr status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-cryptonite-weldr/status_image/last_build.png) [ghc-cryptonite-weldr](ghc-cryptonite-weldr)
-* ![ghc-persistent status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-persistent/status_image/last_build.png) [ghc-persistent](ghc-persistent)
 * ![ghc-esqueleto status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-esqueleto/status_image/last_build.png) [ghc-esqueleto](ghc-esqueleto)
 * ![ghc-haskell-gi-base status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-haskell-gi-base/status_image/last_build.png) [ghc-haskell-gi-base](ghc-haskell-gi-base)
 * ![ghc-haskell-gi status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-haskell-gi/status_image/last_build.png) [ghc-haskell-gi](ghc-haskell-gi)
