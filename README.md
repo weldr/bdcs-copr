@@ -47,7 +47,6 @@ build things in against F26:
 * ![ghc-gi-ggit status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-gi-ggit/status_image/last_build.png) [ghc-gi-ggit](ghc-gi-ggit)
 * ![ghc-htoml status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-htoml/status_image/last_build.png) [ghc-htoml](ghc-htoml)
 * ![ghc-distributive-weldr status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-distributive-weldr/status_image/last_build.png) [ghc-distributive-weldr](ghc-distributive-weldr)
-* ![ghc-comonad-weldr status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-comonad-weldr/status_image/last_build.png) [ghc-comonad-weldr](ghc-comonad-weldr)
 * ![ghc-bifunctors status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-bifunctors/status_image/last_build.png) [ghc-bifunctors](ghc-bifunctors)
 * ![ghc-semigroupoids status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-semigroupoids/status_image/last_build.png) [ghc-semigroupoids](ghc-semigroupoids)
 * ![ghc-profunctors status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-profunctors/status_image/last_build.png) [ghc-profunctors](ghc-profunctors)
@@ -75,16 +74,29 @@ build things in against F26:
 * ![ghc-servant-options](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-servant-options/status_image/last_build.png) [ghc-servant-options](ghc-servant-options)
 * ![ghc-wai-cors](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-wai-cors/status_image/last_build.png) [ghc-wai-cors](ghc-wai-cors)
 
-Fedora 27 already has a sufficiently new version of libgit2.
-
-Rawhide has the following packages:
+Fedora 27 and Rawhide have the following packages:
+  * ghc-adjunctions
+  * ghc-asn1-encoding
+  * ghc-asn1-parse
+  * ghc-asn1-types
   * ghc-bifunctors
   * ghc-esqueleto
+  * ghc-free
+  * ghc-http-client-tls
+  * ghc-http-conduit
+  * ghc-kan-extensions
+  * ghc-lens
   * ghc-persistent
   * ghc-persistent-sqlite
   * ghc-persistent-template
+  * ghc-profunctors
+  * ghc-semigroupoids
+  * ghc-tls
+  * ghc-x509
+  * ghc-x509-store
+  * ghc-x509-system
+  * ghc-x509-validation
   * new enough libgit2
-  * comonad with non-busted dependencies
 
 Rawhide has a sufficiently new version of ghc-cryptonite, but build -weldr
 anyway to relink against ghc-memory-weldr.

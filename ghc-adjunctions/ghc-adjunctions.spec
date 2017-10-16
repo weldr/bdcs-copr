@@ -6,7 +6,7 @@
 
 Name:           ghc-%{pkg_name}
 Version:        4.3
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Adjunctions and representable functors
 
 License:        BSD
@@ -77,6 +77,9 @@ This package provides the Haskell %{pkg_name} library development files.
 
 
 %changelog
+* Mon Oct 16 2017 David Shea <dshea@redhat.com> - 4.3-3
+- Rebuild against Fedora comonad
+
 * Tue Sep 12 2017 David Shea <dshea@redhat.com> - 4.3-1
 - Rebuild against various rebuilt dependencies
 

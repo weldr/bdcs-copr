@@ -6,7 +6,7 @@
 
 Name:           ghc-%{pkg_name}
 Version:        5.0.2
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Kan extensions, Kan lifts, various forms of the Yoneda lemma, and (co)density (co)monads
 
 License:        BSD
@@ -76,6 +76,9 @@ This package provides the Haskell %{pkg_name} library development files.
 
 
 %changelog
+* Wed Oct 16 2017 David Shea <dshea@redhat.com> - 5.0.2-3
+- Rebuild against Fedora comonad
+
 * Tue Sep 12 2017 David Shea <dshea@redhat.com> - 5.0.2-2
 - Rebuild against various rebuilt dependencies
 
