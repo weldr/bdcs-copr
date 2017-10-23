@@ -6,5 +6,7 @@ This package requires the following packages not in Fedora:
 
 * [ghc-attoparsec-binary](../ghc-attoparsec-binary)
 * [ghc-conduit-combinators](../ghc-conduit-combinators)
+* [ghc-cpio-conduit](../ghc-cpio-conduit)
+* [ghc-lzma-conduit](../ghc-lzma-conduit)
 
 ![ghc-codec-rpm status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-codec-rpm/status_image/last_build.png)
