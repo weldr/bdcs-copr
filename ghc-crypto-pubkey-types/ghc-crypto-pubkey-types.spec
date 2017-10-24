@@ -6,7 +6,7 @@
 
 Name:           ghc-%{pkg_name}
 Version:        0.4.3
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Generic cryptography Public keys algorithm types
 
 License:        BSD
@@ -65,7 +65,10 @@ files.
 
 
 %changelog
-* Tue Sep 12 2017 David Shea <dshea@redhat.com> - 0.4.3-1
+* Tue Oct 24 2017 David Shea <dshea@redhat.com> - 0.4.3-3
+- Rebuild against the Fedora version of asn1-encoding
+
+* Tue Sep 12 2017 David Shea <dshea@redhat.com> - 0.4.3-2
 - Rebuild against various rebuilt dependencies
 
 * Thu Aug  3 2017 Fedora Haskell SIG <haskell@lists.fedoraproject.org> - 0.4.3-1

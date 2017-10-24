@@ -6,7 +6,7 @@
 
 Name:           ghc-%{pkg_name}
 Version:        1.6
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Library to authenticate with OAuth for Haskell web applications
 
 License:        BSD
@@ -78,6 +78,9 @@ files.
 
 
 %changelog
+* Tue Oct 24 2017 David Shea <dshea@redhat.com> - 1.6-3
+- Rebuild against the Fedora version of asn1-encoding
+
 * Tue Sep 12 2017 David Shea <dshea@redhat.com> - 1.6-2
 - Rebuild against various rebuilt dependencies
 
