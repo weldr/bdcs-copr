@@ -8,7 +8,7 @@
 
 Name:           ghc-%{pkg_name}
 Version:        2.2.0
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Implementation of RSA, using the padding schemes of PKCS#1 v2.1
 
 License:        BSD
@@ -85,6 +85,9 @@ This package provides the Haskell %{pkg_name} library development files.
 
 
 %changelog
+* Thu Oct 26 2017 David Shea <dshea@redhat.com> - 2.2.0-3
+- Rebuild against Fedora's ghc-asn1-encoding
+
 * Tue Sep 12 2017 David Shea <dshea@redhat.com> - 2.2.0-2
 - Rebuild against various rebuilt dependencies
 
