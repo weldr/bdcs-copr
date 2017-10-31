@@ -6,7 +6,7 @@
 
 Name:           ghc-%{pkg_name}
 Version:        0.1.0.0
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Provide responses to OPTIONS requests for Servant applications
 
 License:        MIT
@@ -70,6 +70,9 @@ files.
 
 
 %changelog
+* Tue Oct 31 2017 David Shea <dshea@redhat.com> - 0.1.0.0-3
+- Rebuild against rebuilt Fedora dependencies
+
 * Mon Oct 16 2017 David Shea <dshea@redhat.com> - 0.1.0.0-2
 - Rebuild against Fedora comonad
 

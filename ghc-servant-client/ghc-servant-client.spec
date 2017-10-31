@@ -8,7 +8,7 @@
 
 Name:           ghc-%{pkg_name}
 Version:        0.11
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Automatical derivation of querying functions for servant webservices
 
 License:        BSD
@@ -112,6 +112,9 @@ This package provides the Haskell %{pkg_name} library development files.
 
 
 %changelog
+* Tue Oct 31 2017 David Shea <dshea@redhat.com> - 0.11-3
+- Rebuild against rebuilt Fedora dependencies
+
 * Mon Oct 16 2017 David Shea <dshea@redhat.com> - 0.11-2
 - Rebuild against Fedora comonad
 
