@@ -8,7 +8,7 @@
 
 Name:           ghc-%{pkg_name}
 Version:        1.0.2
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Type classes for mapping, folding, and traversing monomorphic containers
 
 License:        MIT
@@ -56,11 +56,11 @@ This package provides the Haskell %{pkg_name} library development
 files.
 
 %package devel-doc
-Summary:        Haskell %{pkgname} library development documentation
+Summary:        Haskell %{pkg_name} library development documentation
 BuildArch:      noarch
 
 %description devel-doc
-This package provides the Haskell %{pkgname} library development documentation.
+This package provides the Haskell %{pkg_name} library development documentation.
 
 
 %prep
@@ -100,6 +100,9 @@ grep "%{_docdir}/ghc/html/libraries/%{pkgver}" %{name}-devel.files > %{name}-dev
 %doc ChangeLog.md README.md
 
 %changelog
+* Thu Nov  9 2017 David Shea <dshea@redhat.com> - 1.0.2-3
+- Fix typos in the devel-doc subpackage
+
 * Thu Nov  9 2017 David Shea <dshea@redhat.com> - 1.0.2-2
 - Split the documentation into a separate package
 
