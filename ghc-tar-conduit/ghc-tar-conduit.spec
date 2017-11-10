@@ -21,7 +21,8 @@ BuildRequires:  ghc-conduit-combinators-devel
 # End cabal-rpm deps
 
 %description
-Please see README.md.
+This library is for stream-processing .tar archives via conduit. See the
+documentation of Data.Conduit.Tar.withEntries for a usage example.
 
 
 %package devel
@@ -61,7 +62,7 @@ This package provides the Haskell %{pkg_name} library development files.
 
 
 %files devel -f %{name}-devel.files
-%doc ChangeLog.md README.md
+%doc ChangeLog.md
 
 
 %changelog
