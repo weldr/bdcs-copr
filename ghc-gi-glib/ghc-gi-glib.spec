@@ -68,7 +68,7 @@ mv %{buildroot}%{_ghcdocdir}{,-devel}
 
 %files devel -f %{name}-devel.files
 %license LICENSE
-%doc ChangeLog.md README.md
+%doc README.md
 
 
 %changelog
