@@ -6,7 +6,7 @@
 
 Name:           ghc-%{pkg_name}
 Version:        1.6
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        Library to authenticate with OAuth for Haskell web applications
 
 License:        BSD
@@ -32,9 +32,7 @@ BuildRequires:  ghc-transformers-devel
 # End cabal-rpm deps
 
 %description
-API docs and the README are available at
-<http://www.stackage.org/package/authenticate-oauth>.
-
+Authentication methods for Haskell web applications.
 
 %package devel
 Summary:        Haskell %{pkg_name} library development files
@@ -78,6 +76,9 @@ files.
 
 
 %changelog
+* Tue Nov 14 2017 David Shea <dshea@redhat.com> - 1.6-4
+- Replace the %%description
+
 * Tue Oct 24 2017 David Shea <dshea@redhat.com> - 1.6-3
 - Rebuild against the Fedora version of asn1-encoding
 
