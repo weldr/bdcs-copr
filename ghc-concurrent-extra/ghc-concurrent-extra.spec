@@ -35,7 +35,7 @@ selection of synchronisation primitives:
 
 * 'Broadcast': Wake multiple threads by broadcasting a value.
 
-* 'Event': Wake multiple threads by signalling an event.
+* 'Event': Wake multiple threads by signaling an event.
 
 * 'Lock': Enforce exclusive access to a resource. Also known as a binary
 semaphore or mutex. The package additionally provides an alternative that works
