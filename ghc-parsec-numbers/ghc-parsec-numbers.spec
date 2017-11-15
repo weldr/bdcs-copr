@@ -12,6 +12,7 @@ Summary:        Utilities for parsing numbers from strings
 License:        BSD
 Url:            https://hackage.haskell.org/package/%{pkg_name}
 Source0:        https://hackage.haskell.org/package/%{pkgver}/%{pkgver}.tar.gz
+Patch0:         parsec-numbers-license.patch
 
 BuildRequires:  ghc-Cabal-devel
 BuildRequires:  ghc-rpm-macros
@@ -38,6 +39,7 @@ This package provides the Haskell %{pkg_name} library development files.
 
 %prep
 %setup -q -n %{pkgver}
+%patch0 -p1
 
 
 %build
