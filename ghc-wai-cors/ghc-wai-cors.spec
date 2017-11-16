@@ -42,7 +42,7 @@ BuildRequires:  ghc-websockets-devel
 # End cabal-rpm deps
 
 %description
-This package provides an implemenation of Cross-Origin resource sharing (CORS)
+This package provides an implementation of Cross-Origin resource sharing (CORS)
 for <http://hackage.haskell.org/package/wai Wai> that aims to be compliant with
 <http://www.w3.org/TR/cors>.
 
