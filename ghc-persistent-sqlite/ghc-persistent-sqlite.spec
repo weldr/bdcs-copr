@@ -10,7 +10,7 @@ BuildRequires: sqlite-devel
 
 Name:           ghc-%{pkg_name}
 Version:        2.6.2
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Backend for the persistent library using sqlite3
 
 License:        MIT
@@ -97,7 +97,10 @@ files.
 
 
 %changelog
-* Tue Sep 12 2017 David Shea <dshea@redhat.com> - 2.6.2-1
+* Thu Nov 16 2017 David Shea <dshea@redhat.com> - 2.6.2-3
+- Rebuild against a new persistent
+
+* Tue Sep 12 2017 David Shea <dshea@redhat.com> - 2.6.2-2
 - Rebuild against the Fedora version of ghc-microlens
 
 * Wed Jul 26 2017 Fedora Haskell SIG <haskell@lists.fedoraproject.org> - 2.6.2-1
