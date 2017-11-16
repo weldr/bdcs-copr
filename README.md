@@ -71,6 +71,7 @@ build things in against F26:
 * ![ghc-natural-transformation](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-natural-transformation/status_image/last_build.png) [ghc-natural-transformation](ghc-natural-transformation)
 * ![ghc-string-conversions](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-string-conversions/status_image/last_build.png) [ghc-string-conversions](ghc-string-converions)
 * ![ghc-servant](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-servant/status_image/last_build.png) [ghc-servant](ghc-servant)
+* ![ghc-servant-client-core](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-servant-client-core/status_image/last_build.png) [ghc-servant-client-core](ghc-servant-client-core)
 * ![ghc-servant-client](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-servant-client/status_image/last_build.png) [ghc-servant-client](ghc-servant-client)
 * ![ghc-servant-foreign](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-servant-foreign/status_image/last_build.png) [ghc-servant-foreign](ghc-servant-foreign)
 * ![ghc-servant-server](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-servant-server/status_image/last_build.png) [ghc-servant-server](ghc-servant-server)
