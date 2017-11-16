@@ -77,6 +77,7 @@ build things in against F26:
 * ![ghc-servant-server](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-servant-server/status_image/last_build.png) [ghc-servant-server](ghc-servant-server)
 * ![ghc-servant-options](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-servant-options/status_image/last_build.png) [ghc-servant-options](ghc-servant-options)
 * ![ghc-wai-cors](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-wai-cors/status_image/last_build.png) [ghc-wai-cors](ghc-wai-cors)
+* ![ghc-string-qq](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-string-qq/status_image/last_build.png) [ghc-string-qq](ghc-string-qq)
 
 Fedora 27 has the following packages:
   * ghc-asn1-encoding
