@@ -6,6 +6,5 @@ This package requires the following packages not available in Fedora:
 * [ghc-http-client-tls](../ghc-http-client-tls)
 * [ghc-lens](../ghc-lens)
 * [ghc-lens-aeson](../ghc-lens-aeson)
-* [ghc-psqueues-weldr](../ghc-psqueues-weldr)
 
 ![ghc-wreq status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-wreq/status_image/last_build.png)

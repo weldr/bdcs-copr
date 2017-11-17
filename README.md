@@ -62,7 +62,6 @@ build things in against F26:
 * ![ghc-crypto-pubkey-types](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-crypto-pubkey-types/status_image/last_build.png) [ghc-crypto-pubkey-types](ghc-crypto-pubkey-types)
 * ![ghc-RSA](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-RSA/status_image/last_build.png) [ghc-RSA](ghc-RSA)
 * ![ghc-authenticate-oauth status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-authenticate-oauth/status_image/last_build.png) [ghc-authenticate-oauth](ghc-authenticate-oauth)
-* ![ghc-psqueues-weldr status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-psqueues-weldr/status_image/last_build.png) [ghc-psqueues-weldr](ghc-psqueues-weldr)
 * ![ghc-wreq status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-wreq/status_image/last_build.png) [ghc-wreq](ghc-wreq)
 * ![ghc-unbounded-delays](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-unbounded-delays/status_image/last_build.png) [ghc-unbounded-delays](ghc-unbounded-delays)
 * ![ghc-concurrent-extra](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-concurrent-extra/status_image/last_build.png) [ghc-concurrent-extra](ghc-concurrent-extra)
