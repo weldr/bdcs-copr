@@ -5,14 +5,10 @@ other hand that sounds like more work than it's worth. Here's the order to
 build things in against F26:
 
 * ![ghc-memory-weldr status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-memory-weldr/status_image/last_build.png) [ghc-memory-weldr](ghc-memory-weldr) (memory-0.14.7) 
-* ![ghc-attoparsec-binary status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-attoparsec-binary/status_image/last_build.png) [ghc-attoparsec-binary](ghc-attoparsec-binary) 
-* ![ghc-chunked-data status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-chunked-data/status_image/last_build.png) [ghc-chunked-data](ghc-chunked-data)
 * ![ghc-vector-algorithms status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-vector-algorithms/status_image/last_build.png) [ghc-vector-algorithms](ghc-vector-algorithms)
 * ![ghc-mono-traversable status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-mono-traversable/status_image/last_build.png) [ghc-mono-traversable](ghc-mono-traversable)
 * ![ghc-conduit-combinators status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-conduit-combinators/status_image/last_build.png) [ghc-conduit-combinators](ghc-conduit-combinators)
 * ![ghc-tar-conduit](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-tar-conduit/status_image/last_build.png) [ghc-tar-conduit](ghc-tar-conduit)
-* ![ghc-cpio-conduit](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-cpio-conduit/status_image/last_build.png) [ghc-cpio-conduit](ghc-cpio-conduit)
-* ![ghc-bindings-DSL](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-bindings-DSL/status_image/last_build.png) [ghc-bindings-DSL](ghc-bindings-DSL)
 * ![ghc-lzma-conduit](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-lzma-conduit/status_image/last_build.png) [ghc-lzma-conduit](ghc-lzma-conduit)
 * ![ghc-codec-rpm status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-codec-rpm/status_image/last_build.png) [ghc-codec-rpm](ghc-codec-rpm)
 * ![ghc-cond status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-cond/status_image/last_build.png) [ghc-cond](ghc-cond)
