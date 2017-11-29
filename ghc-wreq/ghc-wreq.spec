@@ -8,7 +8,7 @@
 
 Name:           ghc-%{pkg_name}
 Version:        0.5.1.0
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        An easy-to-use HTTP client library
 
 License:        BSD
@@ -134,6 +134,9 @@ This package provides the Haskell %{pkg_name} library development files.
 
 
 %changelog
+* Wed Nov 29 2017 David Shea <dshea@redhat.com> - 0.5.1.0-4
+- Rebuild against Fedora psqueues again
+
 * Fri Nov 17 2017 David Shea <dshea@redhat.com> - 0.5.1.0-3
 - Rebuild against Fedora psqueues
 
