@@ -3,7 +3,5 @@ Hspec is a testing framework for Haskell. It is inspired by the Ruby library RSp
 This package requires the following packages not available in Fedora:
 
 * [ghc-hspec-core](../ghc-hspec-core)
-* [ghc-hspec-discover](../ghc-hspec-discover)
-* [ghc-hspec-expectations](../ghc-hspec-expectations)
 
 ![ghc-hspec status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-hspec/status_image/last_build.png)

@@ -2,9 +2,7 @@ automatical derivation of querying functions for servant webservices
 
 This package reuqires the following packages not available in Fedora:
 
-* [ghc-generics-sop](../ghc-generics-sop)
 * [ghc-http-client-tls](../ghc-http-client-tls)
-* [ghc-http-media](../ghc-http-media)
 * [ghc-semigroupoids](../ghc-semigroupoids)
 * [ghc-servant](../ghc-servant)
 
