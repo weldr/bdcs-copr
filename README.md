@@ -59,28 +59,7 @@ build things in against F26:
 * ![ghc-servant-options](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-servant-options/status_image/last_build.png) [ghc-servant-options](ghc-servant-options)
 * ![ghc-wai-cors](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-wai-cors/status_image/last_build.png) [ghc-wai-cors](ghc-wai-cors)
 
-Fedora 27 has the following packages:
-  * ghc-asn1-encoding
-  * ghc-asn1-parse
-  * ghc-asn1-types
-  * ghc-bifunctors
-  * ghc-esqueleto
-  * ghc-free
-  * ghc-http-client-tls
-  * ghc-http-conduit
-  * ghc-persistent
-  * ghc-persistent-sqlite
-  * ghc-persistent-template
-  * ghc-profunctors
-  * ghc-semigroupoids
-  * ghc-tls
-  * ghc-x509
-  * ghc-x509-store
-  * ghc-x509-system
-  * ghc-x509-validation
-  * new enough libgit2
-
-Rawhide has the following packages:
+Fedora 27 and rawhide have the following packages:
   * ghc-adjunctions
   * ghc-asn1-encoding
   * ghc-asn1-parse
@@ -92,7 +71,6 @@ Rawhide has the following packages:
   * ghc-http-conduit
   * ghc-kan-extensions
   * ghc-lens
-  * ghc-persistent
   * ghc-persistent-sqlite
   * ghc-persistent-template
   * ghc-profunctors
