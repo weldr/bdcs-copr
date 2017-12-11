@@ -34,6 +34,10 @@ trap 'rm -rf "$tmpdir"' EXIT
     # Replace the Source0 line with something easier
     sed -i "s/^Source0:.*/Source0: %{pkg_name}.tar.gz/" "$rpm_name".spec &&
 
+    # cabal-rpm doesn't know about the bdcs files installed to libexec, since that's
+    # handled by Setup.hs and not something directly in the .cabal file
+    sed -i 's|^%{_bindir}/inspect-|%{_libexecdir}/weldr/inspect-|' "$rpm_name".spec &&
+
     pkgver="$(rpm -q --specfile "${rpm_name}.spec" --qf '%{VERSION}\n' | head -1)" &&
 
     # Create the source archive
