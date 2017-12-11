@@ -5,6 +5,7 @@ topdir  := $(makedir)/..
 RPM_NAME := $(notdir $(basename $(spec)))
 
 srpm:
+	dnf -y install git
 	# Figure out what we're building based on the spec argument
 	case "$(notdir $(spec))" in \
 		"ghc-bdcs.spec") CLONE_URL="https://github.com/weldr/bdcs.git" ; \
