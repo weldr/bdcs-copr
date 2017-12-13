@@ -1,23 +1,13 @@
-Package of the dependencies of bdcs that are not already packages in Fedora
+Packages of the dependencies of bdcs that are not already packages in Fedora
 
-It's probably possible to automate these builds with the copr CLI, but on the
-other hand that sounds like more work than it's worth. Here's the order to
-build things in against F26:
+This list only applies to Fedora 26. Fedora 27 and rawhide have all of the
+necessary packages.
+
+The packages can be built in the following order:
 
 * ![ghc-memory-weldr status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-memory-weldr/status_image/last_build.png) [ghc-memory-weldr](ghc-memory-weldr) (memory-0.14.7) 
-* ![ghc-mono-traversable status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-mono-traversable/status_image/last_build.png) [ghc-mono-traversable](ghc-mono-traversable)
-* ![ghc-conduit-combinators status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-conduit-combinators/status_image/last_build.png) [ghc-conduit-combinators](ghc-conduit-combinators)
-* ![ghc-tar-conduit](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-tar-conduit/status_image/last_build.png) [ghc-tar-conduit](ghc-tar-conduit)
-* ![ghc-lzma-conduit](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-lzma-conduit/status_image/last_build.png) [ghc-lzma-conduit](ghc-lzma-conduit)
-* ![ghc-codec-rpm status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-codec-rpm/status_image/last_build.png) [ghc-codec-rpm](ghc-codec-rpm)
 * ![ghc-cryptonite-weldr status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-cryptonite-weldr/status_image/last_build.png) [ghc-cryptonite-weldr](ghc-cryptonite-weldr)
 * ![ghc-esqueleto status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-esqueleto/status_image/last_build.png) [ghc-esqueleto](ghc-esqueleto)
-* ![ghc-haskell-gi status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-haskell-gi/status_image/last_build.png) [ghc-haskell-gi](ghc-haskell-gi)
-* ![ghc-haskell-gi-overloading status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-haskell-gi-overloading/status_image/last_build.png) [ghc-haskell-gi-overloading](ghc-haskell-gi-overloading)
-* ![ghc-gi-glib status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-gi-glib/status_image/last_build.png) [ghc-gi-glib](ghc-gi-glib)
-* ![ghc-gi-gobject status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-gi-gobject/status_image/last_build.png) [ghc-gi-gobject](ghc-gi-gobject)
-* ![ghc-gi-gio status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-gi-gio/status_image/last_build.png) [ghc-gi-gio](ghc-gi-gio)
-* ![ghc-gi-ostree status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-gi-ostree/status_image/last_build.png) [ghc-gi-ostree](ghc-gi-ostree)
 * ![ghc-gitrev-weldr status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-gitrev-weldr/status_image/last_build.png) [ghc-gitrev-weldr](ghc-gitrev-weldr)
 * ![ghc-asn1-types status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-asn1-types/status_image/last_build.png) [ghc-asn1-types](ghc-asn1-types)
 * ![ghc-asn1-encoding status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-asn1-encoding/status_image/last_build.png) [ghc-asn1-encoding](ghc-asn1-encoding)
@@ -32,8 +22,6 @@ build things in against F26:
 * ![ghc-http-conduit status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-http-conduit/status_image/last_build.png) [ghc-http-conduit](ghc-http-conduit)
 * ![ghc-persistent-sqlite status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-persistent-sqlite/status_image/last_build.png) [ghc-persistent-sqlite](ghc-persistent-sqlite)
 * ![ghc-persistent-template status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-persistent-template/status_image/last_build.png) [ghc-persistent-template](ghc-persistent-template)
-* ![ghc-hspec-core status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-hspec-core/status_image/last_build.png) [ghc-hspec-core](ghc-hspec-core)
-* ![ghc-hspec status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-hspec/status_image/last_build.png) [ghc-hspec](ghc-hspec)
 * ![libgit2 status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/libgit2/status_image/last_build.png) [libgit2](libgit2)
 * ![libgit2-glib status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/libgit2-glib/status_image/last_build.png) [libgit2-glib](libgit2-glib)
 * ![ghc-gi-ggit status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-gi-ggit/status_image/last_build.png) [ghc-gi-ggit](ghc-gi-ggit)
@@ -50,37 +38,6 @@ build things in against F26:
 * ![ghc-RSA](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-RSA/status_image/last_build.png) [ghc-RSA](ghc-RSA)
 * ![ghc-authenticate-oauth status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-authenticate-oauth/status_image/last_build.png) [ghc-authenticate-oauth](ghc-authenticate-oauth)
 * ![ghc-wreq status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-wreq/status_image/last_build.png) [ghc-wreq](ghc-wreq)
-* ![ghc-concurrent-extra](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-concurrent-extra/status_image/last_build.png) [ghc-concurrent-extra](ghc-concurrent-extra)
-* ![ghc-servant](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-servant/status_image/last_build.png) [ghc-servant](ghc-servant)
-* ![ghc-servant-client-core](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-servant-client-core/status_image/last_build.png) [ghc-servant-client-core](ghc-servant-client-core)
 * ![ghc-servant-client](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-servant-client/status_image/last_build.png) [ghc-servant-client](ghc-servant-client)
 * ![ghc-servant-foreign](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-servant-foreign/status_image/last_build.png) [ghc-servant-foreign](ghc-servant-foreign)
-* ![ghc-servant-server](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-servant-server/status_image/last_build.png) [ghc-servant-server](ghc-servant-server)
 * ![ghc-servant-options](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-servant-options/status_image/last_build.png) [ghc-servant-options](ghc-servant-options)
-* ![ghc-wai-cors](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-wai-cors/status_image/last_build.png) [ghc-wai-cors](ghc-wai-cors)
-
-Fedora 27 and rawhide have the following packages:
-  * ghc-adjunctions
-  * ghc-asn1-encoding
-  * ghc-asn1-parse
-  * ghc-asn1-types
-  * ghc-bifunctors
-  * ghc-esqueleto
-  * ghc-free
-  * ghc-http-client-tls
-  * ghc-http-conduit
-  * ghc-kan-extensions
-  * ghc-lens
-  * ghc-persistent-sqlite
-  * ghc-persistent-template
-  * ghc-profunctors
-  * ghc-semigroupoids
-  * ghc-tls
-  * ghc-x509
-  * ghc-x509-store
-  * ghc-x509-system
-  * ghc-x509-validation
-  * new enough libgit2
-
-Rawhide has a sufficiently new version of ghc-cryptonite, but build -weldr
-anyway to relink against ghc-memory-weldr.
