@@ -9,7 +9,7 @@ srpm:
 	# Figure out what we're building based on the spec argument
 	case "$(notdir $(spec))" in \
 		"ghc-bdcs.spec") CLONE_URL="https://github.com/weldr/bdcs.git" ; \
-		                 CABAL_PATH="src/bdcs.cabal" ;; \
+		                 CABAL_PATH="bdcs.cabal" ;; \
                 *) echo "Unknown spec file argument, add the project to .copr/Makefile" ; \
 	           exit 1 ;; \
 	esac ; \
