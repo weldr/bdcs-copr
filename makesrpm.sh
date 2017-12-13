@@ -1,7 +1,7 @@
 #!/bin/sh
 
 if [ "$#" -lt 2 ]; then
-    echo "Usage: makesrpm.sh <rpm-name> <clone-url> <.cabal-path> <output directory>"
+    echo "Usage: makesrpm.sh <rpm-name> <clone-url> <.cabal-path> <output directory> [<cabal-spec options>]"
     echo "Example: makesrpm.sh ghc-bdcs https://github.com/weldr/bdcs.git src/bdcs.cabal \$outdir"
     exit 1
 fi
@@ -10,6 +10,7 @@ rpm_name="$1"
 clone_url="$2"
 cabal_path="$3"
 outdir="$4"
+options="$5"
 
 tmpdir="$(mktemp -d makesrpm.XXXXXX)"
 trap 'rm -rf "$tmpdir"' EXIT
@@ -22,7 +23,7 @@ trap 'rm -rf "$tmpdir"' EXIT
   ( cd srcdir/"$(dirname "$cabal_path")" &&
 
     pkgname="$(basename "$cabal_path" .cabal)" &&
-    cabal-rpm spec "$pkgname" &&
+    cabal-rpm spec $options "$pkgname" &&
 
     # Replace the release with the date
     # Can only make one release per day
@@ -38,6 +39,9 @@ trap 'rm -rf "$tmpdir"' EXIT
     # handled by Setup.hs and not something directly in the .cabal file
     sed -i 's|^%{_bindir}/bdcs-|%{_libexecdir}/weldr/bdcs-|' "$rpm_name".spec &&
     sed -i 's|^%{_bindir}/inspect-|%{_libexecdir}/weldr/inspect-|' "$rpm_name".spec &&
+
+    # still no clue what this line is supposed to do
+    sed -i '/^mv %{buildroot}%{_ghclicensedir}\/{,ghc-}%{name}/d' "$rpm_name".spec &&
 
     pkgver="$(rpm -q --specfile "${rpm_name}.spec" --qf '%{VERSION}\n' | head -1)" &&
 
