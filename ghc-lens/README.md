@@ -2,10 +2,6 @@ Lenses, Folds and Traversals
 
 This package requires the following packages not available in Fedora:
 
-* [ghc-bifunctors](../ghc-bifunctors)
-* [ghc-free](../ghc-free)
 * [ghc-kan-extensions](../ghc-kan-extensions)
-* [ghc-profunctors](../ghc-profunctors)
-* [ghc-semigroupoids](../ghc-semigroupoids)
 
 ![ghc-lens status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-lens/status_image/last_build.png)
