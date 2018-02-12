@@ -37,6 +37,3 @@ The packages can be built in the following order:
 * ![ghc-servant-client](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-servant-client/status_image/last_build.png) [ghc-servant-client](ghc-servant-client)
 * ![ghc-servant-foreign](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-servant-foreign/status_image/last_build.png) [ghc-servant-foreign](ghc-servant-foreign)
 * ![ghc-servant-options](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-servant-options/status_image/last_build.png) [ghc-servant-options](ghc-servant-options)
-* ![ghc-warp](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-warp/status_image/last_build.png) [ghc-warp](ghc-warp)
-
-Rawhide includes ghc-warp-3.2.13. F26 and F27 need the newer package provided here.
