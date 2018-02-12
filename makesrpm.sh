@@ -23,7 +23,13 @@ trap 'rm -rf "$tmpdir"' EXIT
   ( cd srcdir/"$(dirname "$cabal_path")" &&
 
     pkgname="$(basename "$cabal_path" .cabal)" &&
-    cabal-rpm spec $options "$pkgname" &&
+
+    # Fix the name if it isn't what cabal-rpm thinks it should be
+    cabal_rpm_name="$(cabal-rpm spec $options "$pkgname")" &&
+    if [ "$cabal_rpm_name" != "$rpm_name" ]; then
+        mv "${cabal_rpm_name}.spec" "${rpm_name}.spec"
+        sed -i "s/^Name:.*/Name: ${rpm_name}/" "${rpm_name}.spec"
+    fi &&
 
     # Replace the release with the date
     # Can only make one release per day
@@ -48,7 +54,7 @@ trap 'rm -rf "$tmpdir"' EXIT
     pkgver="$(rpm -q --specfile "${rpm_name}.spec" --qf '%{VERSION}\n' | head -1)" &&
 
     # Create the source archive
-    git archive -o "$(basename "$cabal_path" .cabal).tar.gz" --prefix="$pkgname-$pkgver/" HEAD &&
+    git archive -o "$(basename "$cabal_path" .cabal).tar.gz" --prefix="$rpm_name-$pkgver/" HEAD &&
 
     # Create the srpm
     rpmbuild -bs -D '_sourcedir .' -D '_srcrpmdir .' "${rpm_name}".spec

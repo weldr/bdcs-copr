@@ -14,6 +14,9 @@ srpm:
 	        "bdcs-api.spec") CLONE_URL="https://github.com/weldr/bdcs-api.git" ; \
 		                 CABAL_PATH="bdcs-api.cabal" ; \
 				 CABAL_SPEC_OPTIONS="-b" ;; \
+		"bdcs-cli.spec") CLONE_URL="https://github.com/weldr/bdcs-cli.git" ; \
+		                 CABAL_PATH="BDCSCli.cabal" ; \
+				 CABAL_SPEC_OPTIONS="-b" ;; \
                 *) echo "Unknown spec file argument, add the project to .copr/Makefile" ; \
 	           exit 1 ;; \
 	esac ; \
