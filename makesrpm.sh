@@ -42,10 +42,13 @@ trap 'rm -rf "$tmpdir"' EXIT
     sed -i "s/^Source0:.*/Source0: %{pkg_name}.tar.gz/" "$rpm_name".spec &&
 
     # cabal-rpm doesn't know about the bdcs files installed to libexec, since that's
-    # handled by Setup.hs and not something directly in the .cabal file
+    # handled by Setup.hs and not something directly in the .cabal file. Delete the
+    # libexec executables and just include a line for /usr/libexec/weldr/
     if [ "$rpm_name" = "bdcs" ]; then
-        sed -i 's|^%{_bindir}/bdcs-|%{_libexecdir}/weldr/bdcs-|' "$rpm_name".spec &&
-        sed -i 's|^%{_bindir}/inspect-|%{_libexecdir}/weldr/inspect-|' "$rpm_name".spec
+        sed -i '/^%{_bindir}\/bdcs-/d' "$rpm_name".spec &&
+        sed -i '/^%{_bindir}\/inspect-/d' "$rpm_name".spec
+        sed -i '/^%files$/a\
+%{_libexecdir}/weldr/' "$rpm_name".spec
     fi &&
 
     # still no clue what this line is supposed to do
