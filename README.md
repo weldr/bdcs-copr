@@ -1,9 +1,12 @@
 Packages of the dependencies of bdcs that are not already packages in Fedora
 
-This list only applies to Fedora 26. Fedora 27 and rawhide have all of the
-necessary packages.
+The following packages are not available in any version of Fedora:
 
-The packages can be built in the following order:
+* ![ghc-pcre-heavy](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-pcre-heavy/status_image/last_build.png)
+
+Everything else is available in Fedora 27, 28, and rawhide. Only Fedora 26 is missing the necessary packages.
+
+The Fedora 26 packages can be built in the following order:
 
 * ![ghc-memory-weldr status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-memory-weldr/status_image/last_build.png) [ghc-memory-weldr](ghc-memory-weldr) (memory-0.14.7) 
 * ![ghc-cryptonite-weldr status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-cryptonite-weldr/status_image/last_build.png) [ghc-cryptonite-weldr](ghc-cryptonite-weldr)
