@@ -51,9 +51,6 @@ trap 'rm -rf "$tmpdir"' EXIT
 %{_libexecdir}/weldr/' "$rpm_name".spec
     fi &&
 
-    # still no clue what this line is supposed to do
-    sed -i '/^mv %{buildroot}%{_ghclicensedir}\/{,ghc-}%{name}/d' "$rpm_name".spec &&
-
     pkgver="$(rpm -q --specfile "${rpm_name}.spec" --qf '%{VERSION}\n' | head -1)" &&
 
     # Create the source archive
