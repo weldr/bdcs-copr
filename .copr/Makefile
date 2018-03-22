@@ -18,9 +18,9 @@ srpm:
 		                 CABAL_PATH="BDCSCli.cabal" ; \
 				 CABAL_SPEC_OPTIONS="-b" ;; \
 		"codec-rpm.spec") CLONE_URL="https://github.com/weldr/codec-rpm.git" ; \
-		                  CABAL_PATH="codec-rpm.cabal" ; \
+		                  CABAL_PATH="codec-rpm.cabal" ;; \
 		"content-store.spec") CLONE_URL="https://github.com/weldr/content-store.git" ; \
-		                      CABAL_PATH="content-store.cabal" ; \
+		                      CABAL_PATH="content-store.cabal" ;; \
                 *) echo "Unknown spec file argument, add the project to .copr/Makefile" ; \
 	           exit 1 ;; \
 	esac ; \
